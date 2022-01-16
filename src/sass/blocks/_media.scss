@@ -1,7 +1,9 @@
 @media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
     .promo {
         min-height: 625px;
-        padding: 21px 33px 60px 20px;
         &__logo {
             width: 230px;
         }
@@ -17,9 +19,6 @@
         &__link {
             font-size: 15px;
         }
-    }
-    .container {
-        max-width: 890px
     }
     .header {
         align-items: flex-start;
@@ -39,7 +38,6 @@
     }
     .benefits {
         min-height: 450px;
-        padding: 40px 30px 30px 30px;
         &__icons {
             margin-top: 40px;
         }
@@ -65,11 +63,23 @@
     .form_wrapper {
         margin-top: 70px;
     }
+    .carousel {
+        &__inner {
+            width: 100%;
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 90%;
+            }
+        }
+    }
 }
 @media (max-width: 767px) {
+    .container {
+        max-width: 534px;
+    }
     .promo {
         min-height: 585px;
-        padding: 21px 25px 30px 25px;
         &__title {
             font-weight: 500;
             font-size: 35px;
@@ -162,6 +172,10 @@
         justify-content: center;
         margin-top: 36px;
     }
+    .carousel {
+        min-height: 500px;
+        padding: 35px 35px;
+    }
 }
 @media (max-width: 575px) {
     .promo {  
@@ -247,6 +261,23 @@
     }
     .feed-form {
         width: 210px;
+    }
+    .carousel {
+        min-height: 300px;
+        &__inner {
+            img {
+                width: 100%;
+            }
+        }
+        .slick-dots {
+            margin-top: 50px;
+            li {
+                button {
+                    width: 10px;
+                    height: 12px;
+                }
+            }
+        }
     }
 }
 @media (max-width: 485px) {
