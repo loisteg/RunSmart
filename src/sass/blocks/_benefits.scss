@@ -17,6 +17,13 @@
             margin: 0 auto;
             margin-bottom: 40px;
         }
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            animation-play-state: paused;
+            &:hover {
+                animation-play-state: running;
+            }
+        }
         &__title {
             margin-bottom: 20px;
             font-weight: 700;

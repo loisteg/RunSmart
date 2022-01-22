@@ -1,0 +1,31 @@
+.feedback {
+    padding-bottom: 50px;
+    &-item {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        &__img {
+            width: 169px;
+            height: 169px;
+            margin-right: 60px;
+        }
+        &__author {
+            font-weight: 700;
+            font-size: 18px;
+            color: #0D0D0D;
+        }
+        &__subtitle {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 10px;
+            color: #646464;
+        }
+        &__descr {
+            margin-top: 15px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            color: #0D0D0D;
+        }
+    }
+}

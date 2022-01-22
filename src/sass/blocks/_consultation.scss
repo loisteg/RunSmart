@@ -10,4 +10,14 @@
         color: #FFFFFF;
         text-align: left;
     }
+    .error {
+        border: 1px solid $main-color;
+        margin-bottom: 15px;
+        font-weight: 300;
+        font-size: 16px;
+        color: #FFF;
+    }
+    label.error {
+        border: none;
+    }
 }

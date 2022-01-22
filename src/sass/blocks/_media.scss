@@ -35,6 +35,9 @@
         &_main {
             width: 245px;
         }
+        &:hover{
+            background-color: $main-color;
+        }
     }
     .benefits {
         min-height: 450px;
@@ -64,12 +67,34 @@
         margin-top: 70px;
     }
     .carousel {
+        min-height: 700px;
         &__inner {
             width: 100%;
             img {
                 display: block;
                 margin: 0 auto;
                 width: 90%;
+            }
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: center;
+        }
+    }
+    .feedback {
+        &-item {
+            &__descr {
+                font-size: 14px;
+            }
+        }
+    }
+    .footer {
+        &__social {
+            &-item {
+                &:hover{
+                    background: rgba(0, 0, 0, 0.0001);
+                }
             }
         }
     }
@@ -130,6 +155,10 @@
             height: 50px;
             font-size: 17px;
         }
+        &_mini {
+            height: 37px;
+            font-size: 15px;
+        }
     }
     .benefits {
         min-height: 370px;
@@ -140,6 +169,13 @@
         &__icon{
             img {
                 margin-bottom: 15px;
+            }
+            &_animated {
+                animation: heartbeat 1.5s ease;
+                animation-play-state: running;
+                &:hover {
+                    animation-play-state: paused;
+                }
             }
             &__title{
                 font-size: 15px;
@@ -175,6 +211,46 @@
     .carousel {
         min-height: 500px;
         padding: 35px 35px;
+    }
+    .catalog {
+        &__tab {
+            font-size: 16px;
+        }
+    }
+    .feedback {
+        &-item {
+            flex-wrap: wrap;
+            text-align: center;
+            margin-top: 30px;
+            &__img {
+                width: 145px;
+                height: 145px;
+                display: block;
+                margin: 0 auto;
+            }
+            &__author {
+                margin-top: 15px;
+            }
+            &__descr {
+                margin-top: 20px;
+                font-size: 14px;
+            }
+        }
+    }
+    .footer {
+        &__info {
+            width: 430px;
+        }
+        &__address {
+            font-size: 19px;
+        }
+        &__phone {
+            font-size: 19px;
+        }
+    }
+    .pageup {
+        bottom: 10px;
+        right: 10px;
     }
 }
 @media (max-width: 575px) {
@@ -232,6 +308,11 @@
             height: 45px;
             font-size: 14px;
         }
+        &_mini {
+            width: 90px;
+            height: 33px;
+            font-size: 13px;
+        }
     }
     .benefits {
         &__icons {
@@ -261,6 +342,13 @@
     }
     .feed-form {
         width: 210px;
+        input {
+            font-size: 13px;
+        }
+        .error {
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
     }
     .carousel {
         min-height: 300px;
@@ -277,6 +365,109 @@
                     height: 12px;
                 }
             }
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 85px;
+            font-size: 9px;
+        }
+        &__content{  
+            margin-top: 30px;
+        }
+        &-item {
+            width: 265px;
+            &__img {
+                max-width: 90%;
+            }
+            &__subtitle {
+                margin-top: 15px;
+                font-size: 13px;
+            }
+            &__descr {
+                margin-top: 10px;
+                font-size: 11px;
+                padding-right: 3px;
+            }
+            &__link {
+                font-size: 11px;
+            }
+            &__list {
+                li {
+                    font-size: 11px;
+                }
+            }
+            &__old-price {
+                font-size: 11px; 
+            }
+            &__price {
+                font-size: 17px;
+            }
+            &__back {
+                font-size: 12px;
+            }
+        }
+    }
+    .feedback {
+        &-item {
+            &__author {
+                margin-top: 13px;
+            }
+            &__subtitle {
+                font-size: 12px;
+            }
+            &__descr {
+                font-size: 11px;
+                padding: 0 10px;
+            }
+        }
+    }
+    .footer {
+        &__address {
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        &__phone {
+            margin-bottom: 38px;
+            font-size: 15px;
+        }
+        &__info {
+            height: 206px;
+            width: 292px;
+            padding: 25px 20px 30px 20px;
+        }
+        &__social {
+            &-item {
+                width: 40px;
+                height: 40px;
+                img {
+                    height: 20px;
+                }
+            }
+        }
+    }
+    .modal {
+        min-height: 385px;
+        padding: 30px 25px 25px 25px;
+        width: 287px;
+        &__close {
+            top: 5px;
+            right: 5px;
+            font-size: 35px; 
+        }
+        &__subtitle {
+            font-size: 17px;
+            text-align: left;
+        }
+        &__descr {
+            font-size: 11px;
+            text-align: left;
+        }
+        .feed-form {
+            width: 232px;
+        }
+        .error {
+            font-size: 12px;
         }
     }
 }
@@ -325,6 +516,11 @@
             width: 100%;
             height: 45px;
             font-size: 14px;
+        }
+        &_mini {
+            width: 90px;
+            height: 33px;
+            font-size: 13px;
         }
     }
     .benefits {
