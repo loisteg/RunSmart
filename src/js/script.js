@@ -17,6 +17,13 @@ $(document).ready(function(){
         ]
     });
 
+    function showTabs() {
+        $('li.catalog__tab_active')
+        .closest('div.container').find('div.catalog__content').first().addClass('catalog__content_active');
+    }
+
+    showTabs();
+
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
         $(this)
           .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
